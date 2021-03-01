@@ -6,7 +6,7 @@ analysis/seq
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.sh
 # C extensions
 *.so
 

@@ -2,7 +2,7 @@
 
 Official page of [RONet](https://ieeexplore.ieee.org/abstract/document/8968551), which is published @IROS'19
 
-Since the original code is based on Tensorflow, now I've port the original algorithm to pytorch.
+Since the original code is based on Tensorflow, now I have ported the original algorithm to PyTorch.
 
 ![before](/materials/test.gif)
 
@@ -29,13 +29,13 @@ UWB is abbv. for *Ultra-wideband*, and the sensor outputs only 1D range data.
 
 More explanations are provided in [this paper](https://ieeexplore.ieee.org/abstract/document/8768568).
 
-In summary, UWB data are likely to be vulnerable to noise, multipath problem, and so forth.
+In summary, UWB data are likely to be vulnerable to noise, multipath problems, and so forth.
 
-Thus, we leverage the nonliearity of deep learning to tackle that issue.
+Thus, we leverage the nonlinearity of deep learning to tackle that issue.
 
 ### Data
 
-All data are contained in `uwb_dataset` and total eight sensors are deployed, whose positions are as follows:
+All data are contained in `uwb_dataset` and a total of eight sensors are deployed, whose positions are as follows:
 
 ![idnames](/materials/id_names.png)
 
@@ -43,9 +43,9 @@ And each csv consists N (the num. of sequences) x 10 whose columns denotes:
 
 `range @id0, range @id1, range @id2, range @id3, range @id4, range @id5, range @id6, range @id7, x of GT, y of GT`
 
-Note that our experiment was conducted on **real-world** data by using [Pozyx UWB sensors](https://www.pozyx.io/?ppc_keyword=pozyx&gclid=CjwKCAiAm-2BBhANEiwAe7eyFHFbVb7B_eub3dTe9oIUqgN1XI6c9O4N8aOj6L24fZyAHMKQLRahQxoCqdgQAvD_BwE) and motion capture system.
+Note that our experiment was conducted on **real-world** data by using [Pozyx UWB sensors](https://www.pozyx.io/?ppc_keyword=pozyx&gclid=CjwKCAiAm-2BBhANEiwAe7eyFHFbVb7B_eub3dTe9oIUqgN1XI6c9O4N8aOj6L24fZyAHMKQLRahQxoCqdgQAvD_BwE) and the motion capture system.
 
-(Please kindly keep in mint that Pozyx systems does not give precise range data :(  )
+(Please kindly keep in mind that Pozyx systems do not give precise range data :(  )
 
 
 ## Training
