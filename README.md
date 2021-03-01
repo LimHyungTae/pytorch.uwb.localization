@@ -1,6 +1,6 @@
 # Pytorch UWB Localization 
 
-Official page of RONet, which is published @IROS'19
+Official page of [RONet](https://ieeexplore.ieee.org/abstract/document/8968551), which is published @IROS'19
 
 Since the original code is based on Tensorflow, now I've port the original algorithm to pytorch.
 
@@ -17,7 +17,11 @@ Since the original code is based on Tensorflow, now I've port the original algor
 
 ## Descriptions
 
-[여기](https://github.com/IntelRealSense/librealsense/wiki/D400-Series-Visual-Presets)
+All data are contained in `uwb_dataset`.
+
+Our experiment was conducted on **real-world** data by using [Pozyx UWB sensors](https://www.pozyx.io/?ppc_keyword=pozyx&gclid=CjwKCAiAm-2BBhANEiwAe7eyFHFbVb7B_eub3dTe9oIUqgN1XI6c9O4N8aOj6L24fZyAHMKQLRahQxoCqdgQAvD_BwE) and motion capture system.
+
+(Please kindly keep in mint that Pozyx systems does not give precise range data)
 
 
 ## Training
