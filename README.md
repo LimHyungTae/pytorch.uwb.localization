@@ -39,9 +39,13 @@ All data are contained in `uwb_dataset` and total eight sensors are deployed, wh
 
 ![idnames](/materials/id_names.png)
 
+And each csv consists N (the num. of sequences) x 10 whose columns denotes:
+
+`range @id0, range @id1, range @id2, range @id3, range @id4, range @id5, range @id6, range @id7, x of GT, y of GT`
+
 Note that our experiment was conducted on **real-world** data by using [Pozyx UWB sensors](https://www.pozyx.io/?ppc_keyword=pozyx&gclid=CjwKCAiAm-2BBhANEiwAe7eyFHFbVb7B_eub3dTe9oIUqgN1XI6c9O4N8aOj6L24fZyAHMKQLRahQxoCqdgQAvD_BwE) and motion capture system.
 
-(Please kindly keep in mint that Pozyx systems does not give precise range data :()
+(Please kindly keep in mint that Pozyx systems does not give precise range data :(  )
 
 
 ## Training
