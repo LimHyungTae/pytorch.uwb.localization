@@ -40,12 +40,12 @@ def parse_command():
                         help='number of total epochs to run (default: 15)')
     parser.add_argument('-c', '--criterion', metavar='LOSS', default='l1', choices=loss_names,
                         help='loss function: ' + ' | '.join(loss_names) + ' (default: l1)')
-    parser.add_argument('-b', '--batch-size', default=256, type=int, help='mini-batch size')
-    parser.add_argument('--decay-rate', default=0.95, type=float, metavar='dr',
+    parser.add_argument('-b', '--batch-size', default=3000, type=int, help='mini-batch size')
+    parser.add_argument('--decay-rate', default=0.7, type=float, metavar='dr',
                         help='number of decay_step (default: 0.2)')
-    parser.add_argument('--decay-step', default=1, type=int, metavar='ds',
+    parser.add_argument('--decay-step', default=5, type=int, metavar='ds',
                         help='number of decay_step (default: 5)')
-    parser.add_argument('--lr', '--learning-rate', default=0.005, type=float,
+    parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
                         metavar='LR', help='initial learning rate (default 0.001)')
     parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                         help='momentum')

@@ -4,19 +4,20 @@ Official page of RONet, which is published @IROS'19
 
 Since the original code is based on Tensorflow, now I've port the original algorithm to pytorch.
 
+![before](/materials/test.gif){: .center-block :}
 
+[test](.requirements.txt)
 
 ## ToDo
-- [] Port RONet
-- [] Port Bi-LSTM
+- [ ] Port RONet
+- [ ] Port Bi-LSTM
 - [x] Set training pipeline
 - [x] Visualize training procedure
 - [x] Autosave the best model
 
-
-
 ## Descriptions
 
+[여기](https://github.com/IntelRealSense/librealsense/wiki/D400-Series-Visual-Presets)
 
 
 ## Training
