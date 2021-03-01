@@ -10,6 +10,7 @@ Since the original code is based on Tensorflow, now I've port the original algor
 ## ToDo
 - [ ] Port RONet
 - [ ] Port Bi-LSTM
+- [ ] Run on test data
 - [x] Set training pipeline
 - [x] Visualize training procedure
 - [x] Autosave the best model
@@ -66,12 +67,16 @@ python3 main.py --evaluate [path_to_trained_model]
 
 ## Benchmark
 
-	| Methods   |  RMSE |  Mean | Median | Variance | Error Max |
-	|-----------------------------|:-----:|:-----:|:-----:|:-----:|:-----:|
-	| RNN | 0.442 | 0.104 | 87.8 | 96.4 | 98.9 |
-	| GRU | 0.351 | 0.078 | 92.8 | 98.4 | 99.6 |
-	| LSTM | 0.281 | 0.059 | 95.5 | 99.0 | 99.7 |
-	| Ours-200| **0.230** | **0.044** | **97.1** | **99.4** | **99.8** |
+On validation data
+
+| Methods   |  RMSE (cm) |
+|-----------|:----------:|
+| RNN       |    4.050   |
+| GRU       |    3.918   |
+| LSTM      | 4.855 (what's wrong with you..?) |
+| Bi-LSTM   |     TBA    |
+| RONet     |     TBA    |
+
 
 ## Citation
 
